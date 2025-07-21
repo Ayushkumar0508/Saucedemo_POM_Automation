@@ -1,0 +1,19 @@
+{
+  "name": "Saucedemo_POM_Automation",
+  "version": "1.0.0",
+  "description": "Playwright POM automation suite for saucedemo.com - robust, deterministic, multi-browser.",
+  "main": "playwright.config.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:parallel": "npx playwright test --workers=2",
+    "test:sequential": "npx playwright test --workers=1",
+    "report": "npx playwright show-report",
+    "install-browsers": "npx playwright install",
+    "setup": "npm install && npm run install-browsers"
+  },
+  "author": "POM Generator",
+  "license": "MIT",
+  "dependencies": {
+    "@playwright/test": "^1.43.1"
+  }
+}
