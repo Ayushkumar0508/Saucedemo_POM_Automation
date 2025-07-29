@@ -1,0 +1,8 @@
+node_modules/
+test-results/
+playwright-report/
+.env
+.DS_Store
+*.log
+*.mp4
+*.zip
