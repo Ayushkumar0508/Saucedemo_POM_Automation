@@ -1,0 +1,22 @@
+{
+  "name": "saucedemo-pom-automation",
+  "version": "1.0.0",
+  "description": "Playwright POM Automation Framework for saucedemo.com",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npm install && npx playwright install",
+    "test:parallel": "npx playwright test --parallel",
+    "test:sequence": "npx playwright test --serial",
+    "ci": "npm run validate && npm run test:parallel"
+  },
+  "keywords": ["playwright","pom","automation","saucedemo"],
+  "author": "Automation Author",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-plugin-playwright": "^0.16.0"
+  },
+  "dependencies": {
+    "playwright": "^1.41.0"
+  }
+}
